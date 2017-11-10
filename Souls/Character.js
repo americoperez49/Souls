@@ -53,11 +53,11 @@ MyGame.Character.prototype = {
         this.load.image('corona', 'assets/blue.png');
         this.load.image('characterBG', 'assets/textures/black_bg_whole_screen.png');
         this.load.image('characterBGBorders', 'assets/textures/black_bg_whole_screen_borders.png');
-        this.load.audio('characterSound','assets/music/FX293.mp3' )
+        this.load.audio('characterSound','assets/music/FX293.mp3' );
 
-        this.load.audio('Dusk', ['assets/music/Apex_2015_-_This_Is_the_Moment_(MP3_+_Art)/MP3/02 DusK - A Day Like No Other [Ultimate Marvel vs. Capcom 3].ogg'])
+        this.load.audio('Dusk', ['assets/music/DusK - A Day Like No Other.ogg']);
 
-        this.load.spritesheet('characters', 'assets/creatures/creatureSpriteSheet.png', 140, 220,8)
+        this.load.spritesheet('characters', 'assets/creatures/creatureSpriteSheet.png', 140, 220,8);
 
 
 
@@ -98,7 +98,7 @@ MyGame.Character.prototype = {
         this.emitter.start(false, 3000, 5);
 
 
-        this.characterOnScreen =this.add.sprite(this.world.centerX, 300,'characters')
+        this.characterOnScreen =this.add.sprite(this.world.centerX, 300,'characters');
         this.characterOnScreen.anchor.setTo(0.5);
         this.characterOnScreen.scale.setTo(1.5);
 
