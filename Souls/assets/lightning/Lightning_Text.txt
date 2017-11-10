@@ -1,0 +1,12 @@
+group_1_LM = 0 0 600 300
+group_1_long = 0 300 600 300
+group_1_medium = 0 600 600 300
+group_1_short = 600 0 600 300
+group_2_LM = 600 300 600 300
+group_2_long = 600 600 600 300
+group_2_medium = 1200 0 600 300
+group_2_short = 1200 300 600 300
+group_3_LM = 1200 600 600 300
+group_3_long = 0 900 600 300
+group_3_medium = 0 1200 600 300
+group_3_short = 0 1500 600 300

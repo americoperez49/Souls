@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>A Guide to the Phaser State Manager</title>
+    <script src="lib/dev/phaser.min.js" type="text/javascript"></script>
+    <script src="Splash.js" type="text/javascript"></script>
+    <script src="Character.js" type="text/javascript"></script>
+    <script src="Game.js" type="text/javascript"></script>
+</head>
+<body>
+<script type="text/javascript">
+    var game = new Phaser.Game(1080, 900);
+
+
+
+    game.state.add('Splash', MyGame.Splash);
+    game.state.add('Character', MyGame.Character);
+    game.state.add('Game', MyGame.Game);
+
+    game.state.start('Splash');
+
+
+</script>
+
+
+</body>
+
