@@ -25,11 +25,11 @@ MyGame.Splash.prototype = {
     preload: function(){
 
 
-        this.load.spritesheet('lightning', 'assets/lightning/Lightning_Text.png',600,300,16)
+        this.load.spritesheet('lightning', 'assets/lightning/Lightning_Text.png',600,300,16);
 
         this.load.bitmapFont('myFont', 'assets/font/font1.png', 'assets/font/font1.fnt');
-        this.load.audio('SplashAudio', ['assets/music/I_Killed_The_Prom_Queen-Thirty_One_&_Sevens.ogg'])
-        this.load.audio('Sixto', ['assets/music/Apex_2015_-_This_Is_the_Moment_(MP3_+_Art)/MP3/07 Sixto Sounds - Falcon DREAM!! [Super Smash Bros. Brawl].ogg'])
+        this.load.audio('SplashAudio', ['assets/music/I_Killed_The_Prom_Queen-Thirty_One_&_Sevens.ogg']);
+        this.load.audio('Sixto', ['assets/music/Sixto Sounds - Falcon DREAM.ogg']);
         this.load.image('cyberglow', 'assets/textures/cyberglow.png');
 
        // console.log('things preloaded');
@@ -105,9 +105,9 @@ MyGame.Splash.prototype = {
         this.SplashText.scale.setTo(.1);
         this.add.tween(this.SplashText).to( { alpha: 1 }, 9000, "Linear", true, 1000);
         this.Tween= this.add.tween(this.SplashText.scale).to( { x:1.5, y:1.5 }, 9000, "Linear", true, 1000);
-        this.add.tween(this.SplashText).to()
+        this.add.tween(this.SplashText).to();
         this.Tween.onComplete.add(this.startLightning,this);
-        this.add.tween(this.SplashText.scale).to()
+        this.add.tween(this.SplashText.scale).to();
 
         this.textStyle = { font: "15px Arial", fill: "#ffffff", align: "center" };
         this.text = this.add.text(this.world.centerX, this.world.centerY+50,"CLICK TO START", this.textStyle);
